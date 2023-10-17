@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+.screen {
+    color: white;
+}
+
 .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -37,7 +41,6 @@ body {
     -webkit-text-stroke: 0.5px #2eceff;
     //neonlights
     border: solid 2px #fff;
-    //outside glow with css glog generator
     box-shadow:
         0px 0px 2px 3px rgba(46, 206, 255, 0.9),
         inset 0px 0px 2px 3px rgba(46, 206, 255, 0.9),
