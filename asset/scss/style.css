@@ -3,6 +3,10 @@ body {
   color: white;
 }
 
+.screen {
+  color: white;
+}
+
 .buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
