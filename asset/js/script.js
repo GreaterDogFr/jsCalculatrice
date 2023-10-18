@@ -31,11 +31,20 @@ todo: catch les différentes erreurs, catch les résultats en .333
 todo: css : hover, fix l'affichage en full screen (trop gros), faire un screen
 */
 
+
+
 zero.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 0
     } else {
         result2.innerHTML += 0
+    }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
     }
 })
 
@@ -45,6 +54,13 @@ one.addEventListener('click', function () {
     } else {
         result2.innerHTML += 1
     }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
+    }
 })
 
 two.addEventListener('click', function () {
@@ -52,6 +68,13 @@ two.addEventListener('click', function () {
         result1.innerHTML += 2
     } else {
         result2.innerHTML += 2
+    }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
     }
 })
 
@@ -61,6 +84,13 @@ three.addEventListener('click', function () {
     } else {
         result2.innerHTML += 3
     }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
+    }
 })
 
 four.addEventListener('click', function () {
@@ -68,6 +98,13 @@ four.addEventListener('click', function () {
         result1.innerHTML += 4
     } else {
         result2.innerHTML += 4
+    }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
     }
 })
 
@@ -77,6 +114,13 @@ five.addEventListener('click', function () {
     } else {
         result2.innerHTML += 5
     }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
+    }
 })
 
 six.addEventListener('click', function () {
@@ -84,6 +128,13 @@ six.addEventListener('click', function () {
         result1.innerHTML += 6
     } else {
         result2.innerHTML += 6
+    }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
     }
 })
 
@@ -93,6 +144,13 @@ seven.addEventListener('click', function () {
     } else {
         result2.innerHTML += 7
     }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
+    }
 })
 
 eight.addEventListener('click', function () {
@@ -101,6 +159,13 @@ eight.addEventListener('click', function () {
     } else {
         result2.innerHTML += 8
     }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
+    }
 })
 
 nine.addEventListener('click', function () {
@@ -108,6 +173,13 @@ nine.addEventListener('click', function () {
         result1.innerHTML += 9
     } else {
         result2.innerHTML += 9
+    }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
     }
 })
 
@@ -200,7 +272,6 @@ equal.addEventListener('click', function () {
 
 })
 
-
 point.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         if (result1.innerHTML == "") {
@@ -228,4 +299,11 @@ point.addEventListener('click', function () {
                 result2.innerHTML += "."
             }
         }
+
+    if (finalResult.innerHTML != "") {
+        result1.innerHTML = ""
+        operator.innerHTML = ""
+        result2.innerHTML = ""
+        finalResult.innerHTML = ""
+    }
 })
