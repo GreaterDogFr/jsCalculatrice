@@ -27,8 +27,8 @@ let checkForDecimal = /\.{1}/
 /*
 todo: si finalresult a une valeur, quand on clique sur un bouton, 
 todo: la calculatrice doit reset
-todo: catch les différentes erreurs, catch infi, catch les résultats en .333
-todo: rename certaines variables pour plus de clareté
+todo: catch les différentes erreurs, catch les résultats en .333
+todo: css : hover, fix l'affichage en full screen (trop gros), faire un screen
 */
 
 zero.addEventListener('click', function () {
@@ -191,6 +191,11 @@ equal.addEventListener('click', function () {
     //si result 2 vide, revoyer result 1
     if (operator.innerHTML == "") {
         finalResult.innerHTML = nb1
+    }
+
+    //si il n'y a pas d'input, on ne fait rien
+    if (result1.innerHTML == "") {
+        finalResult.innerHTML = ""
     }
 
 })
