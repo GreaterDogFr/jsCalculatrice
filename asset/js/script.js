@@ -34,72 +34,81 @@ todo: rename certaines variables pour plus de clareté
 zero.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 0
-    } else
+    } else {
         result2.innerHTML += 0
+    }
 })
 
 one.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 1
-    } else
+    } else {
         result2.innerHTML += 1
-
+    }
 })
 
 two.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 2
-    } else
+    } else {
         result2.innerHTML += 2
+    }
 })
 
 three.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 3
-    } else
+    } else {
         result2.innerHTML += 3
+    }
 })
 
 four.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 4
-    } else
+    } else {
         result2.innerHTML += 4
+    }
 })
 
 five.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 5
-    } else
+    } else {
         result2.innerHTML += 5
+    }
 })
 
 six.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 6
-    } else
+    } else {
         result2.innerHTML += 6
+    }
 })
 
 seven.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 7
-    } else
+    } else {
         result2.innerHTML += 7
+    }
 })
 
 eight.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 8
-    } else
+    } else {
         result2.innerHTML += 8
+    }
 })
 
 nine.addEventListener('click', function () {
     if (operator.innerHTML == "") {
         result1.innerHTML += 9
-    } else
+    } else {
         result2.innerHTML += 9
+    }
 })
 
 //! all clear
@@ -115,8 +124,10 @@ divide.addEventListener('click', function () {
     if (result1.innerHTML == "") {
         // si on a pas d'opération en cours, rien ne s'affichera
         result1.innerHTML = ""
-    } else
+    } else {
         operator.innerHTML += "/"
+    }
+
 })
 
 multiply.addEventListener('click', function () {
@@ -179,8 +190,7 @@ equal.addEventListener('click', function () {
 
     //si result 2 vide, revoyer result 1
     if (operator.innerHTML == "") {
-        finalResult.innerHTML = result1
-        console.log(finalResult.innerHTML)
+        finalResult.innerHTML = nb1
     }
 
 })
